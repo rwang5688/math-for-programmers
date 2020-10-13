@@ -1,5 +1,9 @@
 from vectors import *
 
+################################################################
+# Vector transformation functions we'll introduce in Chapter 4 #
+################################################################
+
 # def compose(f1,f2):
 #     def new_function(input):
 #         return f1(f2(input))
@@ -76,9 +80,6 @@ B = (
 )
 
 v = (1,-2,-2)
-
-def multiply_matrix_vector(matrix, vector):
-    return linear_combination(vector, *zip(*matrix))
 
 def transform_standard_basis(transform):
     return transform((1,0,0)), transform((0,1,0)), transform((0,0,1))
